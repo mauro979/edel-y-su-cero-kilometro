@@ -36,6 +36,7 @@ h1{
     background-size: cover;
     margin-left: .5rem;
     overflow: hidden;
+    transition: transform 1s ease;
 }
 
 .primera-imagen_container{
@@ -437,4 +438,19 @@ a{
     background-repeat: no-repeat;
     background-size: contain;
     padding: 5px;
+}
+
+/*animaciones*/
+
+.primera-imagen:hover , .segunda-imagen__image:hover , .fundador-content:hover , .donde-encontrarlos__image1:hover ,.curriculum-image:hover ,.donde-encontrarlos__image2:hover{
+    transform: scale(1.08);
+}
+
+.primera-imagen , .segunda-imagen__image , .fundador-content , .donde-encontrarlos__image1 ,.curriculum-image ,.donde-encontrarlos__image2{
+    transition: transform 1s ease;
+}
+
+
+.red1:hover,.red2:hover,.red3:hover,.red4:hover{
+    transform: scale(1.08);
 }
