@@ -330,6 +330,7 @@ h2{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .donde-encontrarlos__image2{
@@ -339,6 +340,7 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: .5rem;
+    overflow: hidden;
 }
 
 .donde-encontrarlos__text2{
