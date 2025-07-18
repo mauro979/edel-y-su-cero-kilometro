@@ -1,0 +1,440 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 500dvh;
+    --color-segundario: #d9b28f;
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.portada{
+    height: clamp(5dvh,70dvh,80dvh);
+    width: 100%;
+    background-image: url(portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* primera imagen y su  descripcion*/
+
+.primera-imagen{
+    background-image: url(son.jpg);
+    width: clamp(5rem,35rem,60rem);
+    height: clamp(5rem,35rem,60rem) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: .5rem;
+    overflow: hidden;
+}
+
+.primera-imagen_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.primera-imagen__text{
+    justify-self: right;
+    width: clamp(3rem,20rem,30rem);
+    margin-right: 5rem;
+    align-self: center;
+}
+
+@media screen and (max-width: 1064px) {
+    .primera-imagen{
+        height: clamp(5rem,25rem,30rem);
+        width: clamp(1rem,30rem,35rem);
+        margin: auto;
+    }
+
+    .primera-imagen__text{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        margin-right: 0;
+    }
+}
+
+/* primera imagen ends */
+
+/*segunda imagen*/
+
+.segunda-imagen{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+.segunda-imagen__image{
+    background-image: url(grupo.jpg);
+    width: clamp(5rem,35rem,60rem);
+    height: clamp(5rem,35rem,60rem) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: end;
+    margin-right: .5rem;
+}
+
+.segunda-imagen__text{
+    justify-self: left;
+    width: clamp(3rem,20rem,30rem);
+    margin-left: 5rem;
+    align-self: center;
+}
+
+@media screen and (max-width: 1064px) {
+
+    .segunda-imagen{
+        flex-direction: column-reverse;
+    }
+
+    .segunda-imagen__image{
+        height: clamp(5rem,25rem,30rem);
+        width: clamp(1rem,25rem,30rem);
+        margin: auto;
+    }
+
+    .segunda-imagen__text{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        margin-left: 0;
+    }
+}
+
+/*segunda imagen end*/
+
+/*Fundador*/
+
+.fundador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+    height: 40rem;
+}
+
+.fundador-content{
+    margin-left: .5rem;
+    background-image: url(fundador.jpg);
+    height: 70%;
+    width: clamp(10%,40%,50%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    align-content: center;
+    color: #fff;
+}
+
+.fundador__text{
+    padding: 10px;
+    text-align: center;
+}
+
+.red1{
+    background-image: url(instagram_icon.jpg);
+    background-size: contain;
+    height: 5rem;
+    width: 5rem;
+    margin-right: .5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    margin-top: .5rem;
+}
+
+.red2{
+    background-image: url(faceboock_icon.jpg);
+    background-size: contain;
+    height: 5rem;
+    width: 5rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.red3{
+    background-image: url(x_logo.jpg);
+    background-size: contain;
+    height: 5rem;
+    width: 5rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.red4{
+    background-image: url(youtube_icon.jpg);
+    background-size: contain;
+    height: 5rem;
+    width: 5rem;
+    margin-right: .5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1064px) {
+    .fundador{
+        flex-direction: column;
+    }
+
+    .fundador-content{
+        width: 100%;
+        margin-left: 0;
+        height: 80% ;
+        align-content: start;
+    }
+
+    .fundador-redes{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+}
+
+/*fundador end*/
+
+/* curriculum*/
+
+.curriculum{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.curriculum-text{
+    width: 50%;
+    align-self: center;  
+    margin-left: 10px;
+    
+}
+
+.curriculum-image{
+    background-image: url(curriculum-image.jpg);
+    width: clamp(20vw,45vw,40vw);
+    height: clamp(20vh,50vh,60vh);
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.curriculum-text__content::first-letter{
+    initial-letter: 2 1;
+}
+
+@media screen and (max-width: 1064px) {
+    .curriculum{
+        display: block;
+    }
+
+    .curriculum-text{
+        width: 100%;
+    }
+
+    .curriculum-text__content{
+        margin-right: 10px;
+    }
+
+    .curriculum-image{
+        width: 100%;
+        height: clamp(20vw,60vw,70vw)
+    }
+}
+
+/*curriculum end*/
+
+/*donde encontrarlos*/
+
+/*parque central*/
+.donde-encontrarlos{
+    margin-top: 5rem;
+}
+
+.donde-encontrarlos__image1{
+    width: clamp(20vw,45vw,40vw);
+    height: clamp(20vh,65vh,70vh);
+    background-image: url(parque_central.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: .5rem;
+}
+
+.donde-encontrarlos__text1{
+    width: clamp(10rem,30rem,40rem);
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.lugar-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 1064px){
+    .lugar-1{
+        flex-direction: column;
+    }
+
+    .donde-encontrarlos__text1{
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .donde-encontrarlos__image1{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/*parque central end*/
+
+/*km cero*/
+
+.lugar-2{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.donde-encontrarlos__image2{
+    width: clamp(20vw,45vw,40vw);
+    height: clamp(20vh,65vh,70vh);
+    background-image: url(kilomtro_cero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: .5rem;
+}
+
+.donde-encontrarlos__text2{
+    width: clamp(10rem,30rem,40rem);
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-left: 3rem;
+}
+
+@media screen and (max-width: 1064px){
+    .lugar-2{
+        flex-direction: column;
+    }
+
+    .donde-encontrarlos__text2{
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .donde-encontrarlos__image2{
+        width: 100%;
+    }
+}
+
+/*km cero end*/
+
+/*donde encontrarlos end*/
+
+/*footer*/
+
+footer{
+    margin-top: 5rem;
+    width: 90%;
+    border-top: #755a3cff solid 1px;
+    justify-self: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: #000;
+}
+
+.social-media{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.instagram-social-media{
+    width: 3rem;
+    height: 3rem;
+    background-image: url(instagram_icon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.faceboock{
+    width: 3rem;
+    height: 3rem;
+    background-image: url(faceboock_icon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.x{
+    width: 3rem;
+    height: 3rem;
+    background-image: url(x_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.youtube-social-media{
+    width: 5rem;
+    height: 3rem;
+    background-image: url(youtube_icon.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px;
+}
