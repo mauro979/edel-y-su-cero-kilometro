@@ -13,11 +13,17 @@ body{
 .portada{
     height: clamp(5dvh,70dvh,80dvh);
     width: 100%;
-    background-image: url(portada.jpg);
+    background-image: url(portada.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media screen and (max-width: 1064px){
+    .portada{
+        display: none;
+    }
 }
 
 h1{
@@ -28,7 +34,7 @@ h1{
 /* primera imagen y su  descripcion*/
 
 .primera-imagen{
-    background-image: url(son.jpg);
+    background-image: url(son.webp);
     width: clamp(5rem,35rem,60rem);
     height: clamp(5rem,35rem,60rem) ;
     background-position: center;
@@ -81,7 +87,7 @@ h1{
 }
 
 .segunda-imagen__image{
-    background-image: url(grupo.jpg);
+    background-image: url(grupo.webp);
     width: clamp(5rem,35rem,60rem);
     height: clamp(5rem,35rem,60rem) ;
     background-position: center;
@@ -106,8 +112,8 @@ h1{
 
     .segunda-imagen__image{
         height: clamp(5rem,25rem,30rem);
-        width: clamp(1rem,25rem,30rem);
-        margin: auto;
+        width: 100%;
+        margin: 0;
     }
 
     .segunda-imagen__text{
@@ -133,7 +139,7 @@ h1{
 
 .fundador-content{
     margin-left: .5rem;
-    background-image: url(fundador.jpg);
+    background-image: url(fundador.webp);
     height: 70%;
     width: clamp(10%,40%,50%);
     background-repeat: no-repeat;
@@ -149,7 +155,7 @@ h1{
 }
 
 .red1{
-    background-image: url(instagram_icon.jpg);
+    background-image: url(instagram_icon.webp);
     background-size: contain;
     height: 5rem;
     width: 5rem;
@@ -161,7 +167,7 @@ h1{
 }
 
 .red2{
-    background-image: url(faceboock_icon.jpg);
+    background-image: url(faceboock_icon.webp);
     background-size: contain;
     height: 5rem;
     width: 5rem;
@@ -173,7 +179,7 @@ h1{
 }
 
 .red3{
-    background-image: url(x_logo.jpg);
+    background-image: url(x_logo.webp);
     background-size: contain;
     height: 5rem;
     width: 5rem;
@@ -185,7 +191,7 @@ h1{
 }
 
 .red4{
-    background-image: url(youtube_icon.jpg);
+    background-image: url(youtube_icon.webp);
     background-size: contain;
     height: 5rem;
     width: 5rem;
@@ -200,6 +206,11 @@ h1{
 @media screen and (max-width: 1064px) {
     .fundador{
         flex-direction: column;
+        overflow: hidden;
+    }
+
+    .fundador__text{
+        padding: 0;
     }
 
     .fundador-content{
@@ -237,7 +248,7 @@ h1{
 }
 
 .curriculum-image{
-    background-image: url(curriculum-image.jpg);
+    background-image: url(curriculum-image.webp);
     width: clamp(20vw,45vw,40vw);
     height: clamp(20vh,50vh,60vh);
     align-self: center;
@@ -285,7 +296,7 @@ h2{
 .donde-encontrarlos__image1{
     width: clamp(20vw,45vw,40vw);
     height: clamp(20vh,65vh,70vh);
-    background-image: url(parque_central.jpg);
+    background-image: url(parque_central.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: .5rem;
@@ -338,7 +349,7 @@ h2{
 .donde-encontrarlos__image2{
     width: clamp(20vw,45vw,40vw);
     height: clamp(20vh,65vh,70vh);
-    background-image: url(kilomtro_cero.jpg);
+    background-image: url(kilomtro_cero.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: .5rem;
@@ -376,7 +387,7 @@ h2{
 /*logotipo*/
 
 .logotipo{
-    background-image: url(logotipo.jpg);
+    background-image: url(logotipo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 20rem;
@@ -420,7 +431,7 @@ a{
 .instagram-social-media{
     width: 3rem;
     height: 3rem;
-    background-image: url(instagram_icon.jpg);
+    background-image: url(instagram_icon.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -431,7 +442,7 @@ a{
 .faceboock{
     width: 3rem;
     height: 3rem;
-    background-image: url(faceboock_icon.jpg);
+    background-image: url(faceboock_icon.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
@@ -442,7 +453,7 @@ a{
 .x{
     width: 3rem;
     height: 3rem;
-    background-image: url(x_logo.jpg);
+    background-image: url(x_logo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
@@ -453,7 +464,7 @@ a{
 .youtube-social-media{
     width: 5rem;
     height: 3rem;
-    background-image: url(youtube_icon.jpg);
+    background-image: url(youtube_icon.webp);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 5px;
