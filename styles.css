@@ -173,18 +173,6 @@ h1{
     margin-bottom: 3rem;
 }
 
-.red3{
-    background-image: url(x_logo.webp);
-    background-size: contain;
-    height: 5rem;
-    width: 5rem;
-    margin-right: .5rem;
-    margin-top: .5rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 3rem;
-}
-
 .red4{
     background-image: url(youtube_icon.webp);
     background-size: contain;
@@ -438,17 +426,6 @@ a{
     width: 3rem;
     height: 3rem;
     background-image: url(faceboock_icon.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    margin-right: 5px;
-    padding: 5px;
-}
-
-.x{
-    width: 3rem;
-    height: 3rem;
-    background-image: url(x_logo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
