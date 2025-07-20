@@ -173,6 +173,18 @@ h1{
     margin-bottom: 3rem;
 }
 
+.red3{
+    background-image: url(logo_whatsapp.webp);
+    background-size: contain;
+    height: 5rem;
+    width: 5rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border-radius: 15%;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
 .red4{
     background-image: url(youtube_icon.webp);
     background-size: contain;
