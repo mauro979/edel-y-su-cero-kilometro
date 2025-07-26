@@ -277,6 +277,10 @@ h2{
         width: 100%;
         height: clamp(20vw,60vw,70vw)
     }
+
+    .curriculum-text__content::first-letter{
+        initial-letter: 1 1;
+    }
 }
 
 /*curriculum end*/
@@ -458,6 +462,10 @@ a{
     .gmail{
         font-size: 20px;
     }
+
+    .bad_font{
+        font-size: 12px;
+    }
 }
 
 /*footer end*/
@@ -486,3 +494,4 @@ a{
     border-top: 5rem;
     color: #345;
 }
+
