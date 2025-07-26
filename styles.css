@@ -37,7 +37,6 @@ h1{
     background-size: cover;
     margin-left: .5rem;
     overflow: hidden;
-    transition: transform 1s ease;
 }
 
 .primera-imagen_container{
@@ -348,7 +347,7 @@ h2{
 .donde-encontrarlos__image2{
     width: clamp(20vw,45vw,40vw);
     height: clamp(20vh,65vh,70vh);
-    background-image: url(kilomtro_cero.webp);
+    background-image: url(kilometro_cero.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: .5rem;
@@ -394,6 +393,7 @@ h2{
     justify-self: center;
     align-self: center;
     margin-top: 5rem;
+    transition: transform 1s ease;
 }
 
 /*logotipo end*/
@@ -458,6 +458,15 @@ a{
     padding: 5px;
 }
 
+.whatsapp-social-media{
+    width: 5rem;
+    height: 3rem;
+    background-image: url(logo_whatsapp.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5px;
+}
+
 @media screen and (max-width: 1064px){
     .gmail{
         font-size: 20px;
@@ -499,8 +508,20 @@ a{
     color: #345;
 }
 
+.logotipo:hover{
+    transform: scale(1.08);
+}
+
 @media screen and (max-width: 1064px){
     .copyrigth{
         font-size: 10px;
     }
+}
+
+@media screen and (max-width: 1064px){
+
+    .donde-encontrarlos__image1:hover,.donde-encontrarlos__image2:hover,.fundador-content:hover{
+        transform: none;
+    }
+
 }
