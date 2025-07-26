@@ -279,7 +279,7 @@ h2{
     }
 
     .curriculum-text__content::first-letter{
-        initial-letter: 1 1;
+        initial-letter:normal;
     }
 }
 
@@ -464,7 +464,11 @@ a{
     }
 
     .bad_font{
-        font-size: 12px;
+        font-size: 15px;
+    }
+
+    .copyrigth{
+        font-size: 10px;
     }
 }
 
@@ -495,3 +499,8 @@ a{
     color: #345;
 }
 
+@media screen and (max-width: 1064px){
+    .copyrigth{
+        font-size: 10px;
+    }
+}
