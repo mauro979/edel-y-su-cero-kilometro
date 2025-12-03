@@ -13,7 +13,7 @@ body{
 .portada{
     height: clamp(5dvh,70dvh,80dvh);
     width: 100%;
-    background-image: url(portada.webp);
+    background-image: url(archivos/portada.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,7 +29,7 @@ h1{
 /* primera imagen y su  descripcion*/
 
 .primera-imagen{
-    background-image: url(son.webp);
+    background-image: url(archivos/son.webp);
     width: clamp(5rem,35rem,60rem);
     height: clamp(5rem,35rem,60rem) ;
     background-position: center;
@@ -55,8 +55,8 @@ h1{
 
 @media screen and (max-width: 1064px) {
     .primera-imagen{
-        height: clamp(5rem,25rem,30rem);
-        width: clamp(1rem,30rem,35rem);
+        height: clamp(5rem,45rem,50rem);
+        width: 100%;
         margin: auto;
     }
 
@@ -81,7 +81,7 @@ h1{
 }
 
 .segunda-imagen__image{
-    background-image: url(grupo.webp);
+    background-image: url(archivos/grupo.webp);
     width: clamp(5rem,35rem,60rem);
     height: clamp(5rem,35rem,60rem) ;
     background-position: center;
@@ -105,7 +105,7 @@ h1{
     }
 
     .segunda-imagen__image{
-        height: clamp(5rem,25rem,30rem);
+        height: clamp(5rem,45rem,50rem);
         width: 100%;
         margin: 0;
     }
@@ -127,17 +127,17 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5rem;
-    height: 40rem;
     overflow: hidden;
 }
 
 .fundador-content{
     margin-left: .5rem;
-    background-image: url(fundador.webp);
-    height: 70%;
-    width: clamp(10%,40%,50%);
+    background-image: url(archivos/fundador.webp);
+    height: clamp(5rem,45rem,60rem) ;
+    width: clamp(10rem,60rem,70rem);
+    margin-bottom: 3rem;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     align-content: center;
     color: #fff;
@@ -145,11 +145,12 @@ h1{
 
 .fundador__text{
     padding: 10px;
-    text-align: center;
+    text-align: start;
+    width: 40%;
 }
 
 .red1{
-    background-image: url(instagram_icon.webp);
+    background-image: url(archivos/instagram_icon.webp);
     background-size: contain;
     height: 5rem;
     width: 5rem;
@@ -161,7 +162,7 @@ h1{
 }
 
 .red2{
-    background-image: url(faceboock_icon.webp);
+    background-image: url(archivos/faceboock_icon.webp);
     background-size: contain;
     height: 5rem;
     width: 5rem;
@@ -173,7 +174,7 @@ h1{
 }
 
 .red3{
-    background-image: url(logo_whatsapp.webp);
+    background-image: url(archivos/logo_whatsapp.webp);
     background-size: contain;
     height: 5rem;
     width: 5rem;
@@ -185,7 +186,7 @@ h1{
 }
 
 .red4{
-    background-image: url(youtube_icon.webp);
+    background-image: url(archivos/youtube_icon.webp);
     background-size: contain;
     height: 5rem;
     width: 5rem;
@@ -195,6 +196,21 @@ h1{
     background-repeat: no-repeat;
     overflow: hidden;
     margin-bottom: 3rem;
+}
+
+.fundador-redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+#fundador-informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: end;
 }
 
 @media screen and (max-width: 1064px) {
@@ -210,7 +226,7 @@ h1{
     .fundador-content{
         width: 100%;
         margin-left: 0;
-        height: 80% ;
+        height: clamp(5rem,45rem,50rem);
         align-content: start;
     }
 
@@ -220,7 +236,15 @@ h1{
         align-content: center;
     }
 
+    #fundador-informacion{
+        align-items: center;
+    }
 
+    #fundador-informacion p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
 }
 
 /*fundador end*/
@@ -238,11 +262,11 @@ h1{
     width: 50%;
     align-self: center;  
     margin-left: 10px;
-    
+    margin-bottom: 5rem;
 }
 
 .curriculum-image{
-    background-image: url(curriculum-image.webp);
+    background-image: url(archivos/curriculum-image.webp);
     width: clamp(20vw,45vw,40vw);
     height: clamp(20vh,50vh,60vh);
     align-self: center;
@@ -294,7 +318,7 @@ h2{
 .donde-encontrarlos__image1{
     width: clamp(20vw,45vw,40vw);
     height: clamp(20vh,65vh,70vh);
-    background-image: url(parque_central.webp);
+    background-image: url(archivos/parque_central.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: .5rem;
@@ -347,7 +371,7 @@ h2{
 .donde-encontrarlos__image2{
     width: clamp(20vw,45vw,40vw);
     height: clamp(20vh,65vh,70vh);
-    background-image: url(kilometro_cero.webp);
+    background-image: url(archivos/kilometro_cero.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: .5rem;
@@ -385,13 +409,14 @@ h2{
 /*logotipo*/
 
 .logotipo{
-    background-image: url(logotipo.webp);
+    background-image: url(archivos/logotipo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 20rem;
     height: 20rem;
     justify-self: center;
     align-self: center;
+    margin: auto;
     margin-top: 5rem;
     transition: transform 1s ease;
 }
@@ -401,6 +426,7 @@ h2{
 /*footer*/
 
 footer{
+    margin: auto;
     margin-top: 5rem;
     width: 90%;
     border-top: #755a3cff solid 1px;
@@ -430,7 +456,7 @@ a{
 .instagram-social-media{
     width: 3rem;
     height: 3rem;
-    background-image: url(instagram_icon.webp);
+    background-image: url(archivos/instagram_icon.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -441,7 +467,7 @@ a{
 .faceboock{
     width: 3rem;
     height: 3rem;
-    background-image: url(faceboock_icon.webp);
+    background-image: url(archivos/faceboock_icon.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
@@ -452,7 +478,7 @@ a{
 .youtube-social-media{
     width: 5rem;
     height: 3rem;
-    background-image: url(youtube_icon.webp);
+    background-image: url(archivos/youtube_icon.webp);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 5px;
@@ -461,7 +487,7 @@ a{
 .whatsapp-social-media{
     width: 5rem;
     height: 3rem;
-    background-image: url(logo_whatsapp.webp);
+    background-image: url(archivos/logo_whatsapp.webp);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 5px;
@@ -486,7 +512,7 @@ a{
 /*animaciones*/
 
 .primera-imagen:hover , .segunda-imagen__image:hover , .fundador-content:hover , .donde-encontrarlos__image1:hover ,.curriculum-image:hover ,.donde-encontrarlos__image2:hover{
-    transform: scale(1.08);
+    transform: scale(1.04);
 }
 
 .primera-imagen , .segunda-imagen__image , .fundador-content , .donde-encontrarlos__image1 ,.curriculum-image ,.donde-encontrarlos__image2{
