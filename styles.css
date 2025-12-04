@@ -55,7 +55,7 @@ h1{
 
 @media screen and (max-width: 1064px) {
     .primera-imagen{
-        height: clamp(5rem,45rem,50rem);
+        height: clamp(5rem,35rem,40rem);
         width: 100%;
         margin: auto;
     }
@@ -105,7 +105,7 @@ h1{
     }
 
     .segunda-imagen__image{
-        height: clamp(5rem,45rem,50rem);
+        height: clamp(5rem,35rem,40rem);
         width: 100%;
         margin: 0;
     }
@@ -226,7 +226,7 @@ h1{
     .fundador-content{
         width: 100%;
         margin-left: 0;
-        height: clamp(5rem,45rem,50rem);
+        height: clamp(5rem,35rem,40rem);
         align-content: start;
     }
 
